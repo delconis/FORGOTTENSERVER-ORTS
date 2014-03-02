@@ -52,4 +52,7 @@
 	<!-- test talkactions -->
 	<talkaction words="!z" separator=" " script="magiceffect.lua"/>
 	<talkaction words="!x" separator=" " script="animationeffect.lua"/>
+
+	<!-- Shop talkactions -->
+	<talkaction words="!shop" script="znoteshop.lua"/>
 </talkactions>
