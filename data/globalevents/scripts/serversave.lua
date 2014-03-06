@@ -1,7 +1,7 @@
 local shutdownAtServerSave = false
 local cleanMapAtServerSave = false
 
-local function serverSave()
+local function finalSave()
         if shutdownAtServerSave then
                 Game.setGameState(GAME_STATE_SHUTDOWN)
         end
@@ -13,7 +13,7 @@ end
 
 local function secondServerSaveWarning()
         broadcastMessage("Server is saving game in one minute. Please go to a safe place.", MESSAGE_STATUS_WARNING)
-        addEvent(serverSave, 60000)
+        addEvent(finalSave, 60000)
 end
 
 local function firstServerSaveWarning()
