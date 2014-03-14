@@ -124,8 +124,8 @@ function onTradeRequest(cid)
 		npcHandler:say("Feel free to offer me your wares!", cid)
 		return true
 	else
-		npcHandler:say("I don't trade with not recognized traders.", cid)
-		return false
+		npcHandler:say("I don't trade with not recognized traders. But I'll make an exception for now.", cid)
+		return true
 	end
 end
 
